@@ -38,6 +38,7 @@ handler = StdOutCallbackHandler()
 api_key = "7JDXm2roHKdgxDtS1bCjmKbbY9jM-dAr8RpEB0HMvWbx"
 ibm_cloud_url = "https://us-south.ml.cloud.ibm.com"
 project_id = "a9b59392-efda-46a0-a6b5-0d6af0f60e20"
+HUGGINGFACEHUB_API_TOKEN="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"
 
 # api_key = os.getenv("API_KEY", None)
 # ibm_cloud_url = os.getenv("IBM_CLOUD_URL", None)
