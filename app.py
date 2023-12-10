@@ -35,17 +35,21 @@ load_dotenv()
 
 handler = StdOutCallbackHandler()
 
-api_key = os.getenv("API_KEY", None)
-ibm_cloud_url = os.getenv("IBM_CLOUD_URL", None)
-project_id = os.getenv("PROJECT_ID", None)
+api_key = "7JDXm2roHKdgxDtS1bCjmKbbY9jM-dAr8RpEB0HMvWbx"
+ibm_cloud_url = "https://us-south.ml.cloud.ibm.com"
+project_id = "a9b59392-efda-46a0-a6b5-0d6af0f60e20"
 
-if api_key is None or ibm_cloud_url is None or project_id is None:
-    print("Ensure you copied the .env file that you created earlier into the same directory as this notebook")
-else:
-    creds = {
-        "url": ibm_cloud_url,
-        "apikey": api_key 
-    }
+# api_key = os.getenv("API_KEY", None)
+# ibm_cloud_url = os.getenv("IBM_CLOUD_URL", None)
+# project_id = os.getenv("PROJECT_ID", None)
+
+# if api_key is None or ibm_cloud_url is None or project_id is None:
+#     print("Ensure you copied the .env file that you created earlier into the same directory as this notebook")
+# else:
+creds = {
+    "url": ibm_cloud_url,
+    "apikey": api_key 
+}
 
 GEN_API_KEY = os.getenv("GENAI_KEY", None)
 
